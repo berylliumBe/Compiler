@@ -2193,7 +2193,7 @@ void yyfree (void * ptr )
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 15 "parser.y"
+#line 41 "parser.y"
 {
     Node *start;
     Node *stmt;
@@ -2201,15 +2201,17 @@ typedef union YYSTYPE
     Node *comp_stmt;
     Node *type;
     Node *args_list;
+    Node *arg;
     Node *factor;
     Node *term;
     Node *expr;
     Node *expr_alg;
+    Node *expr_and_decl;
     Node *identifier;
     char *str;
 }
 /* Line 1529 of yacc.c.  */
-#line 152 "parser.hpp"
+#line 154 "parser.hpp"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
